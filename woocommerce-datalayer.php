@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: WooCommerce Data Layer - View Item
-Plugin URI:  https://example.com
-Description: Dodaje Data Layer dla zdarzenia "view_item" w WooCommerce.
+Plugin Name: WooCommerce Data Layer
+Plugin URI:  https://roial.pl
+Description: Dodaje Data Laye - WooCommerce.
 Version:     1.0.0
-Author:      Twoje Imię
-Author URI:  https://example.com
-Text Domain: wc-datalayer-view-item
+Author:      Piotr Stefaniak
+Author URI:  https://roial.pl
+Text Domain: woocommerce-datalayer
 */
 
 if (!defined('ABSPATH')) {
