@@ -4,7 +4,7 @@ add_action('wp_enqueue_scripts', 'enqueue_remove_from_cart_script_with_data');
 function enqueue_remove_from_cart_script_with_data()
 {
     // Sprawdzenie, czy jesteśmy na stronie koszyka
-    if (is_cart()) {
+    if (is_cart() || is_checkout()) {
         wp_enqueue_script(
             'wc-remove-from-cart',
             plugin_dir_url(__FILE__) . 'assets/js/remove-from-cart.js',
