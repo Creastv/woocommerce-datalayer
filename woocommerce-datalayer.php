@@ -38,9 +38,10 @@ function wc_datalayer_view_item()
                     'item_name' => $product->get_name(),
                     'item_id' => $product->get_sku() ?: $product->get_id(),
                     'price' => $product->get_price(),
-                    'item_brand' => wc_datalayer_get_product_brand($product),
+                    // 'item_brand' => wc_datalayer_get_product_brand($product),
+                    'item_brand'  => 'Bini';
                     'item_category' => wc_get_product_category_list($product->get_id(), ', '),
-                    'item_variant' => $product->get_attribute('pa_color'),
+                    'item_variant' => '',
                     'quantity' => 1, // Domyślnie 1 dla view_item
                 ],
             ],
