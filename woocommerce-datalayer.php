@@ -16,6 +16,7 @@ if (!defined('ABSPATH')) {
 // Wczytanie pliku z kodem Data Layer
 require_once plugin_dir_path(__FILE__) . 'view-item.php';
 require_once plugin_dir_path(__FILE__) . 'remove_from_cart.php';
+require_once plugin_dir_path(__FILE__) . 'begin_checkout.php';
 
 // Hook do WooCommerce
 add_action('wp_footer', 'wc_datalayer_view_item');

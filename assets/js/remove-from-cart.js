@@ -10,14 +10,30 @@ jQuery(document).ready(function ($) {
         // Pobierz ID produktu
         const productId = $(this).data('product_id');
         const removedItem = cartItems.find(item => item.item_id == productId);
-
-        if (removedItem) {
-            // Wywołanie zdarzenia gtag z danymi usuwanego produktu
-            gtag("event", "remove_from_cart", {
-                currency: currency,
-                value: removedItem.price * removedItem.quantity,
-                items: [removedItem],
-            });
-        }
+        // window.dataLayer.push({ ecommerce: null });
+        console.log()
+        // window.dataLayer.push({
+        //     'event': 'removeFromCart',
+        //     'ecommerce': {
+        //       'remove': {                               
+        //         'products': [{                         
+        //             'name': 'Remove Triblend Android T-Shirt',
+        //             'id': Producid, // this variable Producid not print value it just showing name of the variable
+        //             'price': removedItem.price,
+        //             'brand': 'Google',
+        //             'category': 'Apparel',
+        //             'variant': 'Gray',
+        //             'quantity': 1
+        //         }]
+        //       }
+        //     }
+        // if (removedItem) {
+        //     // Wywołanie zdarzenia gtag z danymi usuwanego produktu
+        //     gtag("event", "remove_from_cart", {
+        //         currency: currency,
+        //         value: removedItem.price * removedItem.quantity,
+        //         items: [removedItem],
+        //     });
+        // }
     });
 });
