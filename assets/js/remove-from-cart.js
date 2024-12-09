@@ -3,10 +3,8 @@ jQuery(document).ready(function ($) {
     const cartItems = wc_cart_data.items;
     const currency = wc_cart_data.currency;
 
-    console.log(cartItems); // Debug: sprawdź przekazane dane w konsoli
-
     // Nasłuchiwanie na kliknięcie "Usuń z koszyka"
-    $(document).on('click', '.remove', function (e) {
+    $(document).on('click', '.product-remove a', function (e) {
         e.preventDefault();
 
         // Pobierz ID produktu

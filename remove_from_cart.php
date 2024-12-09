@@ -23,11 +23,11 @@ function enqueue_remove_from_cart_script_with_data()
             $cart_data[] = [
                 'item_id'       => $product->get_id(),
                 'item_name'     => $product->get_name(),
-                'affiliation'   => 'WooCommerce Store',
+                'affiliation'   => 'Bini',
                 'coupon'        => WC()->cart->get_applied_coupons() ? implode(', ', WC()->cart->get_applied_coupons()) : '',
                 'discount'      => 0, // Możesz dodać logikę obliczania rabatu
                 'index'         => 0, // Opcjonalnie ustaw pozycję w koszyku
-                'item_brand'    => 'Your Brand', // Możesz pobrać markę, jeśli używasz taksonomii
+                'item_brand'    => 'Bini', // Możesz pobrać markę, jeśli używasz taksonomii
                 'item_category' => wc_get_product_category_list($product->get_id(), ', '),
                 'item_list_id'  => 'cart_list',
                 'item_list_name' => 'Cart',
